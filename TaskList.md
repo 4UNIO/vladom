@@ -17,7 +17,7 @@
 
 ## Install
 
-- [ ] [NodeJS](https://nodejs.org/uk/)
+- [x] [NodeJS](https://nodejs.org/uk/)
 - [x] [Git](https://git-scm.com/downloads)
 
 ## Start learning git
