@@ -1,0 +1,75 @@
+table {
+    /* width: 100%; */
+    border: 4px solid #000;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid lightgray;
+    width: 60px;
+    height: 60px;
+}
+
+.green{
+    background-color: green;
+    border-color: green;
+}
+
+.darkblue{
+    background-color: darkblue;
+    border: darkblue;
+}
+tr:nth-child(9) td:nth-child(-n + 3)
+{
+    background-color:brown;
+    border-color:brown;
+}
+
+#brown{
+    background-color:brown;
+    border-color:brown; 
+}
+
+.light
+{
+    background-color:lightskyblue;
+    border-color:lightskyblue;
+}
+tr:nth-child(9) td:nth-child(n+6),
+tr:nth-child(10) td:nth-child(n+6),
+tr:nth-child(11) td:nth-child(n+2)
+{
+    background-color:red;
+    border-color:red; 
+}
+
+.orange
+{
+    background-color:orange;
+    border-color:orange; 
+}
+
+ tr:nth-child(-n + 8) td:last-child
+{
+    background-color:rgb(0, 163, 238);
+    border-color:rgb(0, 163, 238); 
+}
+
+tr:first-child td:nth-child(-n + 8)
+{
+    background-color:rgb(255, 136, 0);
+    border-color:rgb(255, 136, 0); 
+}
+tr:nth-child(n+5):nth-child(-n + 7) td:nth-child(n+3):nth-child(-n + 7)
+{
+    background-color: lime;
+    border-color: lime;
+}
+
+tr:nth-child(8) td:nth-child(n+3):nth-child(-n + 6),
+tr:nth-child(9) td:nth-child(5),
+tr:nth-child(10) td:nth-child(n+4):nth-child(-n + 5)
+{
+    background-color:purple;
+    border-color: purple;
+}
