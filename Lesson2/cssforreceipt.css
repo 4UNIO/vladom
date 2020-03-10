@@ -1,0 +1,33 @@
+
+body
+{
+    background-color:#FFF2E5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.header
+{
+    background-color: #EFDB9D;
+    text-align: center;
+}
+table
+{
+    width: 75%;
+   
+}
+.main
+{
+    background-color: #D9E0A6;
+}
+td{
+    background-color: #E5EAC2;
+}
+#second
+{
+border-collapse:collapse;
+}
+
+#third
+{
+    border-collapse:collapse;
+}
