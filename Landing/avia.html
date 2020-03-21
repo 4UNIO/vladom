@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AviaSales</title>
+    <style>
+    .container
+    {
+        width: 100%;
+        max-width: 754px;
+
+        margin: 0 auto;
+        
+        display: flex;
+    }
+
+    .left
+    {
+        flex: 0 0 232px;
+        margin-right: 20px;
+
+        height: 252px;
+        background: red;
+    }
+
+    .ticket1
+    {
+        flex: 1 1 auto;
+        width: 502px;
+        height: 184px;
+        background: #F3F7FA;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+       margin-bottom: 20px;
+    }
+    .ticket2
+    {
+        flex: 1 1 auto;
+        width: 502px;
+        height: 184px;
+        background: #F3F7FA;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .ticket3
+    {
+        flex: 1 1 auto;
+        width: 502px;
+        height: 184px;
+        background: #F3F7FA;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .ticket4
+    {
+        flex: 1 1 auto;
+        width: 502px;
+        height: 184px;
+        background: #F3F7FA;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .ticket5
+    {
+        flex: 1 1 auto;
+        width: 502px;
+        height: 184px;
+        background: #F3F7FA;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .giv
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .options_1
+    {
+        width: 252px;
+        height: 50px;
+        background-color: #2196F3;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+    }
+    .options_2
+    {
+        width: 252px;
+        height: 50px;
+        background-color: #FFFFFF;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+    }
+    .giv .opt
+    {
+        flex-direction: row;
+        display: flex;
+        border: 1px solid #DFE5EC;
+        margin-bottom: 20px;
+    }
+    .ticket1  .first,
+    .ticket1 .sec,
+    .ticket1 .third,
+    .ticket1 .forth,
+    .ticket1 .pre ,
+    .ticket2  .first,
+    .ticket2 .sec,
+    .ticket2 .third,
+    .ticket2 .forth,
+    .ticket2 .pre ,
+    .ticket3  .first,
+    .ticket3 .sec,
+    .ticket3 .third,
+    .ticket3 .forth,
+    .ticket3 .pre ,
+    .ticket4  .first,
+    .ticket4 .sec,
+    .ticket4 .third,
+    .ticket4 .forth,
+    .ticket4 .pre ,
+    .ticket5  .first,
+    .ticket5 .sec,
+    .ticket5 .third,
+    .ticket5 .forth,
+    .ticket5 .pre
+    {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .price
+    {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        color: #2196F3;
+        display: flex;
+        align-items: center;
+       margin-right: 200px;
+    }
+    .pre
+    {
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+    .first , .third
+    {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #A0B0B9;
+    }
+    .sec , .forth
+    {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        color: #4A4A4A;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+        </div>
+        <div class="giv">
+            <div class="opt">
+                <div class="options_1">Самый дешевый</div>
+                <div class="options_2">Самый быстрый</div>
+            </div>
+                <div class="ticket1">
+                    <div class="pre">
+                        <div class="price">13 400 р</div>
+                        <div class="pic">
+                            <img src="S7 Logo.png" alt="AirLines">
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div class="segment_city">MOW – HKT</div>
+                        <div class="duration">В пути</div>
+                        <div class="transit">2 пересадки</div>     
+                    </div>
+                    <div class="sec">
+                        <div class="segment_time">10:45 – 08:00</div>
+                        <div class="segment_time">21ч 15м</div>
+                        <div class="stop_place">HKG, JNB</div>
+                   
+                    </div>
+                    <div class="third">
+                        <div class="segment_city">MOW – HKT</div>
+                        <div class="duration">В пути</div>
+                        <div class="transit">1 пересадка</div>
+                    </div>
+                    <div class="forth">
+                        <div class="segment_time">11:20 – 00:50</div>
+                        <div class="segment_time">13ч 30м</div>
+                        <div class="segment_time">13ч 30м</div>
+                    </div>
+                </div>
+                <div class="ticket2">
+                    <div class="pre">
+                        <div class="price">13 400 р</div>
+                        <div class="pic">
+                            <img src="S7 Logo.png" alt="AirLines">
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div class="segment_city">MOW – HKT</div>
+                        <div class="duration">В пути</div>
+                        <div class="transit">2 пересадки</div>     
+                    </div>
+                    <div class="sec">
+                        <div class="segment_time">10:45 – 08:00</div>
+                        <div class="segment_time">21ч 15м</div>
+                        <div class="stop_place">HKG, JNB</div>
+                   
+                    </div>
+                    <div class="third">
+                        <div class="segment_city">MOW – HKT</div>
+                        <div class="duration">В пути</div>
+                        <div class="transit">1 пересадка</div>
+                    </div>
+                    <div class="forth">
+                        <div class="segment_time">11:20 – 00:50</div>
+                        <div class="segment_time">13ч 30м</div>
+                        <div class="segment_time">13ч 30м</div>
+                    </div>
+                </div>
+                <div class="ticket3">
+                    <div class="pre">
+                        <div class="price">13 400 р</div>
+                        <div class="pic">
+                            <img src="S7 Logo.png" alt="AirLines">
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div class="segment_city">MOW – HKT</div>
+                        <div class="duration">В пути</div>
+                        <div class="transit">2 пересадки</div>     
+                    </div>
+                    <div class="sec">
+                        <div class="segment_time">10:45 – 08:00</div>
+                        <div class="segment_time">21ч 15м</div>
+                        <div class="stop_place">HKG, JNB</div>
+                   
+                    </div>
+                    <div class="third">
+                        <div class="segment_city">MOW – HKT</div>
+                        <div class="duration">В пути</div>
+                        <div class="transit">1 пересадка</div>
+                    </div>
+                    <div class="forth">
+                        <div class="segment_time">11:20 – 00:50</div>
+                        <div class="segment_time">13ч 30м</div>
+                        <div class="segment_time">13ч 30м</div>
+                    </div>
+                </div>
+                <div class="ticket4">
+                    <div class="pre">
+                        <div class="price">13 400 р</div>
+                        <div class="pic">
+                            <img src="S7 Logo.png" alt="AirLines">
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div class="segment_city">MOW – HKT</div>
+                        <div class="duration">В пути</div>
+                        <div class="transit">2 пересадки</div>     
+                    </div>
+                    <div class="sec">
+                        <div class="segment_time">10:45 – 08:00</div>
+                        <div class="segment_time">21ч 15м</div>
+                        <div class="stop_place">HKG, JNB</div>
+                   
+                    </div>
+                    <div class="third">
+                        <div class="segment_city">MOW – HKT</div>
+                        <div class="duration">В пути</div>
+                        <div class="transit">1 пересадка</div>
+                    </div>
+                    <div class="forth">
+                        <div class="segment_time">11:20 – 00:50</div>
+                        <div class="segment_time">13ч 30м</div>
+                        <div class="segment_time">13ч 30м</div>
+                    </div>
+                </div>
+                <div class="ticket5">
+                    <div class="pre">
+                        <div class="price">13 400 р</div>
+                        <div class="pic">
+                            <img src="S7 Logo.png" alt="AirLines">
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div class="segment_city">MOW – HKT</div>
+                        <div class="duration">В пути</div>
+                        <div class="transit">2 пересадки</div>     
+                    </div>
+                    <div class="sec">
+                        <div class="segment_time">10:45 – 08:00</div>
+                        <div class="segment_time">21ч 15м</div>
+                        <div class="stop_place">HKG, JNB</div>
+                   
+                    </div>
+                    <div class="third">
+                        <div class="segment_city">MOW – HKT</div>
+                        <div class="duration">В пути</div>
+                        <div class="transit">1 пересадка</div>
+                    </div>
+                    <div class="forth">
+                        <div class="segment_time">11:20 – 00:50</div>
+                        <div class="segment_time">13ч 30м</div>
+                        <div class="segment_time">13ч 30м</div>
+                    </div>
+                </div>
+           
+        </div>
+</body>
+</html>

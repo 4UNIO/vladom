@@ -7,7 +7,7 @@
     <style>
         .container-1
         {
-            display: inline-flex;
+            display: flex;
            flex-direction: row;
            text-align: center;
             margin-bottom: 15px;
@@ -20,15 +20,17 @@
             letter-spacing: 0.5px;
             text-transform: uppercase; 
             margin-top: 20px;
-            margin-left: 680px;
+            align-items: center;
           
         }
 
-        .container-2
+        .container-2 .box-1,
+        .container-2 .box_1
         {
             display: flex;
-           flex-direction: column;
+           flex-direction:column;
             align-items: center;
+            justify-content: center;
          
         }
 
@@ -42,7 +44,7 @@
             margin: 10px;
         }
         
-        .container-1 .box-1
+        .container-2 .box-1
         {
             width:240px;
             height:50px;
@@ -51,8 +53,9 @@
             color:white;
             border: 1px solid #DFE5EC;
            border-radius: 5px;
+           
         }
-        .container-1 .box_1
+        .container-2 .box_1
         {
             width:240px;
             height:50px;
@@ -61,15 +64,31 @@
             color: #4A4A4A;
             border: 1px solid #DFE5EC;
            border-radius: 5px;
+           
+           
         }
-        
-    
+        .main
+        {
+            width: 100%;
+            max-width: 754px;
+            margin: 0 auto;
+            display: flex;
+        }
+        .opt
+        {
+            display: flex;
+            flex-direction: row;
+            height: 80px;
+        }
     </style>
 </head>
 <body>
-    <div class="main">
+    
 
-    <div class="container-1">
+    <div class="main">
+        
+    <!-- <div class="container-1">
+        
         <div class="box-1">
             <h3>Самый дешевый</h3>
         </div>
@@ -77,9 +96,17 @@
             <h3>Самый быстрый</h3>
         </div>
         
-    </div>
+    </div> -->
 
     <div class="container-2">
+        <div class="opt">
+            <div class="box-1">
+                <h3>Самый дешевый</h3>
+            </div>
+            <div class="box_1">
+                <h3>Самый быстрый</h3>
+            </div>
+        </div>
         <div class="box-2">
             <h3>Box 2</h3>
             <p></p>
