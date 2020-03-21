@@ -19,12 +19,12 @@
     {
         flex: 0 0 232px;
         margin-right: 20px;
-
+        padding: 20px;
         height: 252px;
-        background: red;
+        background: #F3F7FA;
     }
 
-    .ticket1
+    .ticket
     {
         flex: 1 1 auto;
         width: 502px;
@@ -33,47 +33,9 @@
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
        margin-bottom: 20px;
+       padding:20px;
     }
-    .ticket2
-    {
-        flex: 1 1 auto;
-        width: 502px;
-        height: 184px;
-        background: #F3F7FA;
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        margin-bottom: 20px;
-    }
-    .ticket3
-    {
-        flex: 1 1 auto;
-        width: 502px;
-        height: 184px;
-        background: #F3F7FA;
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        margin-bottom: 20px;
-    }
-    .ticket4
-    {
-        flex: 1 1 auto;
-        width: 502px;
-        height: 184px;
-        background: #F3F7FA;
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        margin-bottom: 20px;
-    }
-    .ticket5
-    {
-        flex: 1 1 auto;
-        width: 502px;
-        height: 184px;
-        background: #F3F7FA;
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        margin-bottom: 20px;
-    }
+    
 
     .giv
     {
@@ -121,35 +83,15 @@
         border: 1px solid #DFE5EC;
         margin-bottom: 20px;
     }
-    .ticket1  .first,
-    .ticket1 .sec,
-    .ticket1 .third,
-    .ticket1 .forth,
-    .ticket1 .pre ,
-    .ticket2  .first,
-    .ticket2 .sec,
-    .ticket2 .third,
-    .ticket2 .forth,
-    .ticket2 .pre ,
-    .ticket3  .first,
-    .ticket3 .sec,
-    .ticket3 .third,
-    .ticket3 .forth,
-    .ticket3 .pre ,
-    .ticket4  .first,
-    .ticket4 .sec,
-    .ticket4 .third,
-    .ticket4 .forth,
-    .ticket4 .pre ,
-    .ticket5  .first,
-    .ticket5 .sec,
-    .ticket5 .third,
-    .ticket5 .forth,
-    .ticket5 .pre
+    .ticket  .first,
+    .ticket .sec,
+    .ticket .third,
+    .ticket .forth,
+    .ticket .pre 
     {
         display:flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .price
     {
@@ -194,19 +136,82 @@
         margin-bottom: 20px;
         margin-top: 5px;
     }
+    .check
+    {
+        display: flex;
+       
+    }
     
+    .title
+    {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #4A4A4A;
+        margin-bottom: 10px;
+    }
+    .check__input
+    {
+        position:absolute;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        
+    }
+    .check__box
+    {
+        position: absolute;
+        width: 1em;
+        height: 1em;
+        background-color: tomato;
+        display: flex;
+       
+    }
+   
 </style>
 </head>
 <body>
     <div class="container">
         <div class="left">
+            <div class="title">Количество пересадок</div>
+            <label class="check ">
+                <input class="check__input" type="checkbox">
+                Все
+                <div class="check__box"></div>
+            </label>
+            <label class="check">
+                <input class="check__input" type="checkbox" checked>
+                Без пересадок
+                <div class="check__box"></div>
+            </label>
+            <label class="check">
+                <input class="check__input" type="checkbox">
+                1 пересадка
+                <div class="check__box"></div>
+            </label>
+            <label class="check">
+                <input class="check__input" type="checkbox">
+                2 пересадки
+                <div class="check__box"></div>
+            </label>
+            <label class="check">
+                <input class="check__input" type="checkbox">
+                3 пересадки
+                <div class="check__box"></div>
+            </label>
         </div>
         <div class="giv">
             <div class="opt">
                 <div class="options_1">Самый дешевый</div>
                 <div class="options_2">Самый быстрый</div>
             </div>
-                <div class="ticket1">
+                <div class="ticket">
                     <div class="pre">
                         <div class="price">13 400 р</div>
                         <div class="pic">
@@ -235,7 +240,7 @@
                         <div class="segment_time">13ч 30м</div>
                     </div>
                 </div>
-                <div class="ticket2">
+                <div class="ticket">
                     <div class="pre">
                         <div class="price">13 400 р</div>
                         <div class="pic">
@@ -264,7 +269,7 @@
                         <div class="segment_time">13ч 30м</div>
                     </div>
                 </div>
-                <div class="ticket3">
+                <div class="ticket">
                     <div class="pre">
                         <div class="price">13 400 р</div>
                         <div class="pic">
@@ -293,7 +298,7 @@
                         <div class="segment_time">13ч 30м</div>
                     </div>
                 </div>
-                <div class="ticket4">
+                <div class="ticket">
                     <div class="pre">
                         <div class="price">13 400 р</div>
                         <div class="pic">
@@ -322,7 +327,7 @@
                         <div class="segment_time">13ч 30м</div>
                     </div>
                 </div>
-                <div class="ticket5">
+                <div class="ticket">
                     <div class="pre">
                         <div class="price">13 400 р</div>
                         <div class="pic">
