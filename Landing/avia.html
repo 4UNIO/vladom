@@ -10,8 +10,8 @@
         width: 100%;
         max-width: 754px;
 
-        margin: 0 auto;
-        
+        margin: 160px auto;
+        box-sizing: border-box;
         display: flex;
     }
 
@@ -22,6 +22,7 @@
         padding: 20px;
         height: 252px;
         background: #F3F7FA;
+        box-sizing: border-box;
     }
 
     .ticket
@@ -33,7 +34,9 @@
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
        margin-bottom: 20px;
-       padding:20px;
+       padding:5px;
+       padding-bottom: 15px;
+       box-sizing: border-box;
     }
     
 
@@ -58,6 +61,8 @@
         text-transform: uppercase;
         display: flex;
         justify-content: center;
+        border-radius: 10px 0 0 10px;
+        
     }
     .options_2
     {
@@ -75,12 +80,15 @@
         text-transform: uppercase;
         display: flex;
         justify-content: center;
+        border: 1px solid #DFE5EC;
+        border-radius: 0 10px 10px 0;
+        
     }
     .giv .opt
     {
         flex-direction: row;
         display: flex;
-        border: 1px solid #DFE5EC;
+       
         margin-bottom: 20px;
     }
     .ticket  .first,
@@ -136,10 +144,20 @@
         margin-bottom: 20px;
         margin-top: 5px;
     }
+    .option
+    {
+        display: block;
+        margin-bottom: 0.25em;
+    }
     .check
     {
-        display: flex;
-       
+        padding-left: 1.2em;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 20px;
     }
     
     .title
@@ -158,52 +176,60 @@
     }
     .check__input
     {
-        position:absolute;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
+        position: absolute;
+       appearance: none;
+       -webkit-appearance: none;
+       -moz-appearance: none; 
         
     }
     .check__box
     {
-        position: absolute;
-        width: 1em;
-        height: 1em;
-        background-color: tomato;
-        display: flex;
-       
+       position:absolute;
+       margin-left:-1.2em;
+       width: 1em;
+       height: 1em;
+       background-image: url(Form.svg);
+       background-color: white;
+       border: 1px solid #2196F3;
+        box-sizing: border-box;
+        border-radius: 2px;
     }
-   
+    .check__input:checked + .check__box{
+        background-image: url(Shape.svg);
+        background-size: contain;         
+        background-repeat: no-repeat;
+    }
+
 </style>
 </head>
 <body>
     <div class="container">
         <div class="left">
             <div class="title">Количество пересадок</div>
-            <label class="check ">
+            <label class="check option">
                 <input class="check__input" type="checkbox">
+                <span class="check__box"></span>
                 Все
-                <div class="check__box"></div>
             </label>
-            <label class="check">
+            <label class="check option">
                 <input class="check__input" type="checkbox" checked>
+                <span class="check__box"></span>
                 Без пересадок
-                <div class="check__box"></div>
             </label>
-            <label class="check">
-                <input class="check__input" type="checkbox">
+            <label class="check option">
+                <input class="check__input" type="checkbox"checked>
+                <span class="check__box"></span>
                 1 пересадка
-                <div class="check__box"></div>
             </label>
-            <label class="check">
-                <input class="check__input" type="checkbox">
+            <label class="check option">
+                <input class="check__input" type="checkbox" checked>
+                <span class="check__box"></span>
                 2 пересадки
-                <div class="check__box"></div>
             </label>
-            <label class="check">
+            <label class="check option">
                 <input class="check__input" type="checkbox">
+                <span class="check__box"></span>
                 3 пересадки
-                <div class="check__box"></div>
             </label>
         </div>
         <div class="giv">
