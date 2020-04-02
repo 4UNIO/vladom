@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        .personal ,
+        .Reg ,
+        .facts,
+        .Info
+        {
+           margin: 10px;
+           border: 2px solid grey;
+           padding: 5px;
+           font-weight: bold;
+        }
+        .add
+        {
+            margin: 5px;
+            padding: 5px;
+        }
+        .doform
+        {
+            width: 33.3%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="doform">
+        <form action="" method="post">
+            <div class="personal">Personal Information
+                <div class="add">
+                     <label> Surname:
+                         <input type="text" name="surname" >
+                     </label>
+                </div>
+                <div class="add">
+                     <label> Name:
+                         <input type="text" name="name">
+                     </label>
+                </div>
+                <div class="add">
+                     <label> How old are you?
+                         <input type="number" name="old" >
+                     </label>
+                </div>
+                <div class="add">
+                     <label> Full date of birth:
+                         <input type="date" name="birth">
+                     </label>
+                </div>
+                <div class="add">
+                     <label> I accept the term of the agreement
+                         <input type="checkbox">
+                     </label>
+                </div>
+           </div>
+           <div class="Reg">Registration
+                    <div class="add">
+                        <label> E-mail:
+                            <input type="email" placeholder="email@example.com">
+                        </label>
+                </div>
+                <div class="add">
+                    <label> Password:
+                        <input type="password">
+                    </label>
+                </div>
+            </div>
+
+            <div class="facts">An interesting fact about you!
+                <div class="add">
+                    <label>Do you love cats?
+                        <label>Yes<input type="radio" name="cats" value="YES"></label>
+                        <label>No<input type="radio" name="cats" value="NO"></label>
+                    </label>
+            </div>
+            <div class="add">
+                <label> What is your favorite color?
+                    <input type="color" name="favorite">
+                </label>
+            </div>
+                <div class="add">
+                    <label>What time do you go to bed?
+                        <input type="time" name="bed">
+                    </label>
+            </div>
+            <div class="add">
+                <label> What are your favorite brand of cars?
+                    <select multiple>
+                        <option>BMW</option>
+                        <option>Audi</option>
+                        <option>Lada</option>
+                    </select>
+                </label>
+            </div>
+            <div class="add">
+                <label>How do you rate our work?
+                    <input type="range">
+                </label>
+            </div>
+                
+            </div>
+            <div class="Info">Additional info:
+                <div class="add">
+                    <label>Comments:
+                        <textarea name="comments" cols="10" rows="5" maxlength="10" minlength="1"></textarea>
+                    </label>
+                </div>
+                <div class="add">
+                    <label>Would you recommend us?
+                        <select>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

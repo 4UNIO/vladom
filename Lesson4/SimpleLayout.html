@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       
+       
+        .container
+        {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .logo
+        {
+            background-color: orange;
+            flex: 0 0 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu
+        {
+            background-color: red;
+            flex: 1 1 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .square
+        {
+            flex-basis:100;
+            flex-grow: 65;
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            
+        }
+
+        .navbar
+        {
+            flex-basis: 0;
+            flex-grow: 35;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: grey;
+            color: white;
+        }
+        .wrapper
+        {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: row;
+            
+            
+        }
+
+        .news
+        {
+            flex:0 0 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: tomato;
+        }
+
+        .list
+        {
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: orange;
+        }
+        .footer
+        {
+            flex: 0 0 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: orange;
+            
+        }
+         
+    </style>
+</head>
+<body>
+
+       <div class="container">
+    <div class="logo">
+    Logo
+    </div>
+    <div class="menu">
+    Menu
+    </div>
+       </div>
+       <div class="container">
+           <div class="square">
+            <div class="wrapper">
+                <div class="news">
+                    NEWS
+                </div>
+             <div class="list">
+                 LIST
+             </div>
+            </div>
+            <div class="footer">
+                FOOTER
+            </div>
+           </div>
+           <div class="navbar">
+            Nav
+           </div> 
+       </div>
+</body>
+</html>
